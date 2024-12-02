@@ -1,0 +1,58 @@
+/* Contenedor principal de la lista de reservas */
+.reservaLista {
+    background: linear-gradient(135deg, #f7f7f7, #e3e3e3);
+    padding: 30px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título de la lista de reservas */
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Contenedor de cada reserva */
+div > div {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover sobre cada reserva */
+div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensaje si no hay reservas */
+p {
+    color: #888;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Estilos para pantallas pequeñas (mobile-first) */
+@media (max-width: 768px) {
+    .reservaLista {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    div > div {
+        padding: 15px;
+    }
+}

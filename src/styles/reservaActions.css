@@ -1,0 +1,95 @@
+/* Contenedor del formulario de actualización */
+.update {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario de actualización */
+.titleUpdate {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Estilo de los inputs y textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Estilo de los inputs y textarea cuando están en foco */
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Estilo del botón de actualizar */
+.btnUpdate[type="button"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Estilo del botón de eliminar */
+.btnDelete[type="button"]:last-of-type {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en botones */
+.btnUpdate, .btnDelete[type="button"]:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Estilo del textarea */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Estilos para pantallas pequeñas (mobile-first) */
+@media (max-width: 768px) {
+    .update {
+        padding: 20px;
+    }
+
+    .titleUpdate {
+        font-size: 1.5em;
+    }
+
+    input,
+    textarea {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    button[type="button"] {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}

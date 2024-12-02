@@ -1,0 +1,8 @@
+.bodyHome{
+    background: rgb(34,89,195);
+background: linear-gradient(0deg, rgba(34,89,195,1) 0%, rgba(106,166,176,1) 33%, rgba(253,142,45,1) 100%);
+}
+
+.welcome{
+    text-align: center;
+}
